@@ -1,0 +1,36 @@
+# Build artifacts (make build)
+build/
+
+# Local provider/module cache
+**/.terraform/
+
+# State: never commit; use a remote backend
+*.tfstate
+*.tfstate.*
+.terraform.tfstate.lock.info
+
+# Saved plans (contain resolved values, can include secrets)
+*.tfplan
+tfplan
+
+# Variable files carry environment-specific and sensitive values.
+# Commit *.tfvars.example instead.
+*.tfvars
+*.tfvars.json
+
+# Local overrides
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# CLI config and crash logs
+.terraformrc
+terraform.rc
+crash.log
+crash.*.log
+
+# Lock files are not committed; `terraform init` regenerates them. Provider versions
+# are constrained in each terraform.tf (~> 6.72). Env roots that need hash-pinned
+# providers should commit their own lock file and un-ignore it there.
+.terraform.lock.hcl

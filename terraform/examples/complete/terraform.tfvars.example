@@ -1,0 +1,8 @@
+admin_email       = "loadtest-admin@example.com"
+admin_name        = "dlt-admin"
+name              = "dlt"
+environment       = "dev"
+hub_region        = "us-east-1"
+spoke_region      = "us-west-2"
+egress_cidr_block = "0.0.0.0/0"
+deploy_mcp_server = false
